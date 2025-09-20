@@ -20,16 +20,17 @@ public class Anagram {
 
     private static boolean checkAnagram(String s, String t) {
         
-        if(s.length() != t.length()){
-            return false;
-        }
-       char[] sArray = s.toCharArray();
-       char[] tArray= t.toCharArray();
-       Arrays.sort(sArray);
-        Arrays.sort(tArray);
+      if (s.length() != t.length()) {
+        return false;
+        
+      }
 
-        return (Arrays.equals(sArray,tArray));
-    }
+      char[] sChar = s.toCharArray();
+      char[] tChar = t.toCharArray();
 
-    
+      Arrays.sort(sChar);
+      Arrays.sort(tChar);
+
+      return Arrays.equals(sChar,tChar);
+}
 }
