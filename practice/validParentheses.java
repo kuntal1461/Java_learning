@@ -1,20 +1,14 @@
 import java.util.Stack;
 
 public class validParentheses {
-    
-
-
     public static void main(String[] args) {
         
         String s = "()[]{}";
 
         isValid(s);
     }
-
     private static boolean isValid(String s) {
-
         Stack stack= new Stack<Character>();
-
         for(int i =0;i < s.length();i++){
            char newChar = s.charAt(i);
 
